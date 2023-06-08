@@ -44,8 +44,18 @@ public class EstudianteDistancia extends Estudiante{
     
     @Override
     public String toString(){
-        String reporte = String.format("Nombres: %s\n",
-                obtenerNombresEstudiante());
+        String reporte = String.format("Nombres: %s\n"
+                + "Apellidos: %s\n"
+                + "Identidicacion: %s\n"
+                + "Edad del estudiante: %d\n"
+                + "Numero de asignatura: %d\n"
+                + "Costo asignatura: %.2f\n",
+                obtenerNombresEstudiante(),
+                obtenerApellidoEstudiante(),
+                obtenerIdentificacionEstudiante(),
+                obtenerEdadEstudiante(),
+                obtenerNumeroAsignaturas(),
+                obtenerCostoAsignatura());
         
         return reporte;
     }
